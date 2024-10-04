@@ -8,8 +8,8 @@ COPY mount_configs /configs
 VOLUME /data
 WORKDIR /data
 
-COPY entrypoint.sh /data/entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh
 
-RUN chmod +x /data/entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
-ENTRYPOINT [ "sh", "/data/entrypoint.sh" ]
+ENTRYPOINT [ "sh", "/entrypoint.sh" ]

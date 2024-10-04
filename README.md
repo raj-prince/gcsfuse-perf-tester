@@ -7,3 +7,6 @@ GCSFuse performance tester.
 
 ### Command to run the Docker image
 `docker run <image_name> /jobs/read_cache.fio`
+
+### Command to run the Docker image with shared volume
+`docker run -v $HOST_VOLUME:/data` <image_name> /hobs/read_cache.fio
