@@ -39,3 +39,8 @@ docker push us-west1-docker.pkg.dev/gcs-fuse-test/gcsfuse-perf-tester/gcsfuse-fi
 ```agsl
 sudo docker --config /home/princer_google_com/.docker run --device /dev/fuse --privileged  us-west1-docker.pkg.dev/gcs-fuse-test/gcsfuse-perf-tester/gcsfuse-fio:0.0.5 /configs/default.yaml princer-empty-bucket /jobs/presubmit_perf_test.fio
 ```
+5. Run with custom fio workload and mount-config
+```agsl
+sudo docker --config /home/princer_google_com/.docker run --device /dev/fuse --privileged -v /config_path/config.yaml:/configs/config.yaml -v /job_path/job.fio:/jobs/job.fio us-west1-docker.pkg.dev/gcs-fuse-test/gcsfuse-perf-tester/gcsfuse-fio:0.0.5 /configs/config.yaml princer-empty-bucket /jobs/job.fio
+
+```
