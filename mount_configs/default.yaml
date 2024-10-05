@@ -2,7 +2,6 @@ app-name: "Perf Tester Default"
 write:
   create-empty-file: false
 logging:
-  file-path: /var/log/test.txt
   format: text
   severity: trace
   log-rotate:
