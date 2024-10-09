@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 # This expects arguments with this order: (1) config.yaml (2) bucket-name (3) fio job
 
 # Create mount directory.

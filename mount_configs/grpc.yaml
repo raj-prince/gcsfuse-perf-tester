@@ -1,0 +1,24 @@
+app-name: "GRPC"
+write:
+  create-empty-file: false
+logging:
+  format: text
+  severity: info
+  log-rotate:
+    max-file-size-mb: 512
+    backup-file-count: 10
+    compress: true
+file-cache:
+  max-size-mb: 0
+  cache-file-for-range-read: false
+  enable-parallel-downloads: false
+  parallel-downloads-per-file: 16
+  max-parallel-downloads: -1
+  download-chunk-size-mb: 50
+metadata-cache:
+  enable-nonexistent-type-cache: false
+  stat-cache-max-size-mb: 32
+  ttl-secs: 60
+  type-cache-max-size-mb: 4
+gcs-connection:
+  client-protocol: grpc
