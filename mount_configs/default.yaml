@@ -3,7 +3,7 @@ write:
   create-empty-file: false
 logging:
   format: text
-  severity: trace
+  severity: info
   log-rotate:
     max-file-size-mb: 512
     backup-file-count: 10
